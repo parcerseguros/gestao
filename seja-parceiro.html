@@ -223,9 +223,8 @@
     </div>
   </section>
 
-  <section class="products-section locked" id="productsSection">
+  <section class="products-section" id="productsSection">
     <div class="container">
-      <p class="video-lock-hint">Em instantes, o formulário será exibido abaixo para que você possa dar continuidade ao processo.</p>
       <div class="products-content">
       <div class="products-title reveal visible">
         <h2>Pronto para começar?</h2>
@@ -280,7 +279,7 @@
      CONTROLE DO VÍDEO
      - Começa sozinho ao entrar na página, mudo (como antes, sem tentar ativar som sozinho)
      - Não pode ser pausado nem adiantado até o final
-     - O formulário aparece 60s após o início do vídeo (ou antes, se ele acabar antes disso)
+     - O botão/formulário já aparece junto com a página, sem espera
      ===================================================================== */
   (function () {
     const video = document.getElementById('pitchVideo');
@@ -334,15 +333,6 @@
       });
     }
 
-    // libera o formulário 60s após o início do vídeo (ou quando ele terminar, o que vier primeiro)
-    let unlocked = false;
-    function unlockForm() {
-      if (unlocked || !productsSection) return;
-      unlocked = true;
-      productsSection.classList.remove('locked');
-    }
-    setTimeout(unlockForm, 60000);
-    video.addEventListener('ended', unlockForm);
   })();
 </script>
 
