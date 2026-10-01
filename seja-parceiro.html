@@ -11,18 +11,18 @@
 <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
   :root{
-    --petroleo:#214247;
-    --profundo:#132728;
-    --cinza-claro:#DBDBD1;
-    --cinza:#9E9D8F;
-    --azul:#76ACC1;
+    --petroleo:#0A2A6B;
+    --profundo:#001A4D;
+    --cinza-claro:#D9E1F0;
+    --cinza:#8A97B5;
+    --azul:#2F7CF6;
     --branco:#FFFFFF;
-    --ink:#132728;
+    --ink:#001A4D;
     --radius-lg:28px;
     --radius-md:18px;
     --radius-sm:12px;
-    --shadow-soft:0 20px 60px -20px rgba(19,39,40,0.25);
-    --shadow-card:0 12px 40px -18px rgba(19,39,40,0.18);
+    --shadow-soft:0 20px 60px -20px rgba(0,26,77,0.25);
+    --shadow-card:0 12px 40px -18px rgba(0,26,77,0.18);
     --ease:cubic-bezier(.16,.8,.24,1);
   }
   *{box-sizing:border-box;margin:0;padding:0;}
@@ -60,9 +60,9 @@
   }
   .btn-primary{
     background:linear-gradient(135deg,var(--petroleo),var(--profundo));
-    color:var(--branco);box-shadow:0 14px 30px -10px rgba(19,39,40,0.45);
+    color:var(--branco);box-shadow:0 14px 30px -10px rgba(0,26,77,0.45);
   }
-  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 40px -12px rgba(19,39,40,0.55);}
+  .btn-primary:hover{transform:translateY(-2px);box-shadow:0 20px 40px -12px rgba(0,26,77,0.55);}
   .btn-light{background:var(--branco);color:var(--profundo);}
   .btn-light:hover{transform:translateY(-2px);box-shadow:0 16px 34px -12px rgba(0,0,0,0.35);}
 
@@ -74,7 +74,7 @@
   }
   header.scrolled{
     background:rgba(255,255,255,0.85);backdrop-filter:blur(16px);-webkit-backdrop-filter:blur(16px);
-    box-shadow:0 8px 30px -20px rgba(19,39,40,0.3);padding:8px 0;
+    box-shadow:0 8px 30px -20px rgba(0,26,77,0.3);padding:8px 0;
   }
   .nav-wrap{max-width:1160px;margin:0 auto;padding:0 20px;display:flex;align-items:center;justify-content:center;}
   .logo{display:inline-flex;align-items:center;}
@@ -84,7 +84,7 @@
   /* ---------- page hero ---------- */
   .page-hero{
     padding:92px 0 20px;text-align:center;
-    background:linear-gradient(180deg,#F4F5F1 0%,var(--branco) 100%);
+    background:linear-gradient(180deg,#F4F7FC 0%,var(--branco) 100%);
   }
   .page-hero h1{font-size:clamp(28px,6.4vw,42px);font-weight:800;max-width:640px;margin:0 auto;}
   .page-hero p.sub{font-size:clamp(15.5px,4vw,17.5px);color:var(--petroleo);opacity:0.82;max-width:520px;margin:12px auto 0;}
@@ -94,18 +94,18 @@
   .video-wrap{position:relative;}
   .video-frame{
     position:relative;width:100%;aspect-ratio:16/9;border-radius:var(--radius-lg);overflow:hidden;
-    background:linear-gradient(160deg,var(--profundo),#1a3438);box-shadow:var(--shadow-soft);
+    background:linear-gradient(160deg,var(--profundo),#0A2A6B);box-shadow:var(--shadow-soft);
   }
   .video-frame iframe{width:100%;height:100%;border:0;display:block;pointer-events:none;}
   .video-frame video{width:100%;height:100%;object-fit:cover;display:block;background:#000;}
   .sound-toggle{
     position:absolute;right:16px;bottom:16px;z-index:3;
     display:flex;align-items:center;gap:8px;padding:10px 16px;border-radius:100px;
-    background:rgba(19,39,40,0.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
+    background:rgba(0,26,77,0.55);backdrop-filter:blur(6px);-webkit-backdrop-filter:blur(6px);
     color:#fff;font-size:13.5px;font-weight:600;border:1px solid rgba(255,255,255,0.25);
     cursor:pointer;transition:background .3s var(--ease),transform .3s var(--ease);
   }
-  .sound-toggle:hover{background:rgba(19,39,40,0.75);transform:translateY(-1px);}
+  .sound-toggle:hover{background:rgba(0,26,77,0.75);transform:translateY(-1px);}
   .sound-toggle svg{width:17px;height:17px;flex-shrink:0;}
 
   /* ---------- products (planos) ---------- */
@@ -123,23 +123,23 @@
 
   .products-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px;}
   .product-card{
-    background:var(--branco);border:1.5px solid rgba(33,66,71,0.12);
+    background:var(--branco);border:1.5px solid rgba(10,42,107,0.12);
     border-radius:var(--radius-lg);padding:26px 22px;
     box-shadow:var(--shadow-card);position:relative;overflow:hidden;
     display:flex;flex-direction:column;
     transition:transform .35s var(--ease),box-shadow .35s var(--ease);
   }
-  .product-card:hover{transform:translateY(-4px);box-shadow:0 22px 50px -18px rgba(19,39,40,0.3);}
+  .product-card:hover{transform:translateY(-4px);box-shadow:0 22px 50px -18px rgba(0,26,77,0.3);}
   .product-card.featured{
     background:linear-gradient(160deg,var(--profundo),var(--petroleo) 75%);
     color:var(--branco);border-color:transparent;
-    box-shadow:0 24px 55px -18px rgba(19,39,40,0.5);
+    box-shadow:0 24px 55px -18px rgba(0,26,77,0.5);
   }
   .product-card.featured h3,.product-card.featured .p-price,.product-card.featured .p-price .cur{color:var(--branco);}
   .product-tag{
     display:inline-block;font-size:11.5px;font-weight:700;letter-spacing:0.06em;text-transform:uppercase;
     padding:5px 12px;border-radius:100px;margin-bottom:12px;align-self:flex-start;
-    background:rgba(118,172,193,0.15);color:var(--petroleo);
+    background:rgba(47,124,246,0.15);color:var(--petroleo);
   }
   .product-card.featured .product-tag{background:rgba(255,255,255,0.18);color:var(--azul);}
   .product-card h3{font-size:19px;font-weight:800;margin-bottom:4px;}
@@ -155,12 +155,12 @@
   .cta-final-card{
     max-width:420px;margin:0 auto;text-align:center;
     background:var(--branco);border-radius:24px;padding:36px 30px;
-    box-shadow:0 22px 50px -18px rgba(19,39,40,0.18);
+    box-shadow:0 22px 50px -18px rgba(0,26,77,0.18);
   }
   .cta-final-card .btn{width:100%;padding:16px 24px;font-size:16px;}
 
   /* ================= FOOTER ================= */
-  footer{background:#0F2223;color:rgba(255,255,255,.55);padding:64px 0 32px;}
+  footer{background:#000F33;color:rgba(255,255,255,.55);padding:64px 0 32px;}
   .footer-top{display:flex;justify-content:space-between;align-items:flex-start;flex-wrap:wrap;gap:40px;padding-bottom:44px;border-bottom:1px solid rgba(255,255,255,.08);}
   .footer-logo-img{height:36px;width:auto;}
   .footer-logo .tag{font-size:9.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--azul);font-weight:700;margin-top:10px;}
